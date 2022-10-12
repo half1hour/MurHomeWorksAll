@@ -8,6 +8,7 @@ class Vehicle(ABC):
         self.weight = weight
         self.fuel = fuel
         self.fuel_consumption = fuel_consumption
+        self.started = False
 
 
     def start(self):

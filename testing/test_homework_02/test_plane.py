@@ -1,12 +1,10 @@
 import pytest
 from faker import Faker
+from homework_02 import plane as module_plane, base as module_base, exceptions
 
 fake = Faker()
 
 homework = pytest.importorskip("homework_02")
-module_base = homework.base
-module_plane = homework.plane
-exceptions = homework.exceptions
 
 
 @pytest.fixture

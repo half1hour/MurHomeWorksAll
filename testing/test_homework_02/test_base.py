@@ -1,11 +1,10 @@
 import pytest
 from faker import Faker
+from homework_02 import base, exceptions
 
 fake = Faker()
 
 homework = pytest.importorskip("homework_02")
-base = homework.base
-exceptions = homework.exceptions
 
 
 CONSUMPTION_MIN = fake.pyint(9, 13)
